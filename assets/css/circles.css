@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "primal";
+  src: url("../fonts/Primal.otf");
+}
+
+canvas {
+  width: 100%;
+  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1; /* OLD - Firefox 19- */
+  -webkit-flex: 1; /* Chrome */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* NEW, */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* border: 10px white solid; */
+  box-sizing: border-box;
+  background-color: #302244;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+#heading {
+  margin: 0;
+  height: 60px;
+  text-align: center;
+  /* background-color: black; */
+  color: whitesmoke;
+  /* border-bottom: 5px solid white; */
+  font-size: 20px;
+  box-sizing: border-box;
+  border-bottom: 5px solid;
+  border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+  font-size: 50px;
+  font-family: "primal";
+  text-transform: uppercase;
+}
+
+#instruction {
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+  padding: 5px;
+  opacity: 0.8;
+  max-width: 700px;
+  width: 30%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  box-shadow: 10px 10px black;
+  color: black;
+  font-weight: 500;
+}
